@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 export default function About()
 {
 
-    useEffect(() => {
+     useEffect(() => {
         Aos.init()
       }, [])
       
