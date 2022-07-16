@@ -17,12 +17,13 @@ export default function Home() {
 
   return (  
     <>
-        <div className='flex place-content-center animate-pulse ease-in-out duration-300'>
-          <Image src="/rotaractFUllLogo.svg" height={600} width={1200} className="shadow-2xl" alt="Example Image"></Image>
+       <div className='flex justify-evenly'>
+          <Image src="/abstract pink.png" height={700} width={1200} className="shadow-2xl" quality={100} alt="Hero Text"></Image>
         </div>
 
+        {/* <h2 className='text-center break-words text-6xl font-[gyahegi] no-underline leading-loose'>The Rotaract Club of BIT Mesra</h2> */}
         <h1 data-aos="fade-up" className='text-center'>The Rotaract Club of BIT Mesra</h1>
-
+        
         <div className='leading-relaxed'>
 
           <h2>Where are we</h2>
