@@ -23,7 +23,7 @@ export default function Home() {
 
         {/* <h2 className='text-center break-words text-6xl font-[gyahegi] no-underline leading-loose'>The Rotaract Club of BIT Mesra</h2> */}
         <h1 data-aos="fade-up" className='text-center'>The Rotaract Club of BIT Mesra</h1>
-        
+
         <div className='leading-relaxed'>
 
           <h2>Where are we</h2>
