@@ -7,7 +7,7 @@
     @apply -mt-10 opacity-0;
   }
   h1 {
-    @apply text-[3rem] p-5 md:text-[4rem] leading-tight font-black underline underline-offset-4
+    @apply text-[2rem] p-3 md:text-[3.5rem] leading-tight font-black underline underline-offset-4
   }
   h2 {
     @apply font-bold py-5 text-4xl;
