@@ -18,7 +18,8 @@ export default function Home() {
   return (  
     <>
         <div className='flex justify-evenly'>
-          <Image src="/abstract pink.png" height={700} width={1200} className="shadow-2xl" quality={100} alt="Hero Text"></Image>
+          {/* <Image src="/rotaractFullLogo.png" height={700} width={1200} className="shadow-2xl" quality={100} alt="Hero Text"></Image> */}
+          <img src="/rotaractFullLogo.png" height={700} width={1200} alt="Hero Image"></img>
         </div>
         
         {/* <h2 className='text-center break-words text-6xl font-[gyahegi] no-underline leading-loose'>The Rotaract Club of BIT Mesra</h2> */}
