@@ -23,7 +23,7 @@ export default function About()
 
               <div className='d2 flex justify-evenly m-5 gap-8'>
 
-                  <img className='im1 max-h-[19rem] p-0  float-right' src='/rotaractFUllLogo.png'></img>
+                  <img className='im1 max-h-[10rem] p-0  float-right' src='/rotaractFUllLogo.png' data-aos="fade-right"></img>
                   
                   <div className='d3  bg-slate-100 min-h-[12rem] min-w-[10rem] flex gap-5 items-center text-clip p-2' data-aos="fade-up">
                     <p className='max-h-[8rem]'>
@@ -68,11 +68,15 @@ export default function About()
             </div>
 
             <div>
-                <div className='contact bg-pink-200 min-h-[30rem] p-10 gap-5'><h2 >GET IN TOUCH</h2> <div className=' float-left text-left min-h-[5rem] text-sm pl-2'> fyfi doie fgefwe fgfewfgw igf wiufg f uvb vod ud  dktou cvsui csdg cvsdu f hifh ioh  h ohgsfggogfsogf  ufdg  f ooghhvhidhvvihh   </div> 
+                <div className='contact bg-[#d8378033] min-h-[30rem] p-10 gap-5 '><h2 >GET IN TOUCH</h2> <div className=' float-left text-left min-h-[5rem] text-sm pl-2'> fyfi doie fgefwe fgfewfgw igf wiufg f uvb vod ud  dktou cvsui csdg cvsdu f hifh ioh  h ohgsfggogfsogf  ufdg  f ooghhvhidhvvihh   </div> 
 
-                <div className='review  bg-slate-200 min-w-[30rem] float-right min-h-[28rem] space-y-5 mr-12 pr-8 pl-8 '> <h2 className='text-center'>Write a Review</h2> <input className='palceholder:text-slate-800 border-2 border-slate-800 w-[100%]' placeholder='Name'/><div className='email border-2  float-center border-rose-500'>Email</div> <div className='border-2  float-center min-h-[8rem] border-rose-500'>write your reviews</div> 
-                <div className='text-center border-2 bg-orange-300'>Button</div>
-                </div>
+                <form className='review  bg-slate-200 min-w-[30rem] float-right min-h-[28rem] space-y-5 mr-12 pr-8 pl-8 '>
+                    <h2 className='text-center'>Write a Review</h2>
+                    <input className='palceholder:text-slate-800 border-2 border-slate-800 w-[100%]' placeholder='Name'/>
+                    <div className='email border-2  float-center border-slate-800'><input className='w-[100%] ' placeholder='Email'></input></div> 
+                    <textarea className='w-[100%] 'placeholder='Write a reviews' rows={4} />
+                    <div className='flex justify-center'><button className='w-[70%] border-2 h-[3rem] bg-orange-300'>Button</button></div>
+                </form>
                 
                 </div>
                 <footer className='foorter bg-orange-300 min-h-[15rem]'></footer>
