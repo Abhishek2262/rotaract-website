@@ -3,6 +3,7 @@ import Aos from 'aos';
 import Image from 'next/image'
 import Card from '../components/card';
 
+
 import { useEffect } from 'react';
 
 export default function About()
@@ -65,6 +66,20 @@ export default function About()
             
             
             </div>
+
+            <div>
+                <div className='contact bg-pink-200 min-h-[30rem] p-10 gap-5'><h2 >GET IN TOUCH</h2> <div className=' float-left text-left min-h-[5rem] text-sm pl-2'> fyfi doie fgefwe fgfewfgw igf wiufg f uvb vod ud  dktou cvsui csdg cvsdu f hifh ioh  h ohgsfggogfsogf  ufdg  f ooghhvhidhvvihh   </div> 
+
+                <div className='review  bg-slate-200 min-w-[30rem] float-right min-h-[28rem] space-y-5 mr-12 pr-8 pl-8 '> <h2 className='text-center'>Write a Review</h2> <input className='palceholder:text-slate-800 border-2 border-slate-800 w-[100%]' placeholder='Name'/><div className='email border-2  float-center border-rose-500'>Email</div> <div className='border-2  float-center min-h-[8rem] border-rose-500'>write your reviews</div> 
+                <div className='text-center border-2 bg-orange-300'>Button</div>
+                </div>
+                
+                </div>
+                <footer className='foorter bg-orange-300 min-h-[15rem]'></footer>
+                
+            
+            </div>
+            
             
 
 
