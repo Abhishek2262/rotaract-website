@@ -14,7 +14,7 @@ export default function Layout({ children }) {
     return (
       <>
           <Navbar/>
-          <div className='min-h-[200vh] py-24 p-8 text-[#d83780] border-[0.5rem] border-[#d83780] flex justify-center'>
+          <div className='min-h-[200vh] py-24 p-8 text-[#121212] border-[0.5rem] border-[#d83780] flex justify-center'>
             <div className='w-full md:w-[100%] text-2xl flex flex-col gap-10 '> 
               {children}
             </div>
