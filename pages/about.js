@@ -23,7 +23,7 @@ export default function About()
 
               <div className='d2 flex justify-evenly m-5 gap-8'>
 
-                  <img className='im1  max-h-[19rem] p-0  float-right' src='/rotaractFUllLogo.png'></img>
+                  <img className='im1 max-h-[19rem] p-0  float-right' src='/rotaractFUllLogo.png'></img>
                   
                   <div className='d3  bg-slate-100 min-h-[12rem] min-w-[10rem] flex gap-5 items-center text-clip p-2' data-aos="fade-up">
                     <p className='max-h-[8rem]'>

@@ -13,12 +13,6 @@ export default function Layout({ children }) {
 
     return (
       <>
-          <Head>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-            <link href="https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap" rel="stylesheet"/>
-          </Head>
-
           <Navbar/>
           <div className='min-h-[200vh] py-24 p-8 text-[#d83780] border-[0.5rem] border-[#d83780] flex justify-center'>
             <div className='w-full md:w-[100%] text-2xl flex flex-col gap-10 '> 

@@ -30,7 +30,7 @@ export default function Navbar(props)
                     <div className='basis-1/4'><Link href="./about"><a className='hover:font-bold duration-300 hover:tracking-wide'>About</a></Link></div>
                     <div className='basis-1/4'><Link href="#"><a className='hover:font-bold duration-300 hover:tracking-wide'>Contact</a></Link></div>
                     
-                    <div className="absolute overflow-clip bg-neutral-200  rounded-full w-16 h-16 shadow-2xl"><Image src="/rotaractLogo.svg" className='shadow-2xl' layout='fill' alt="Example Image"></Image></div>                
+                    <div className="absolute overflow-clip bg-neutral-200  rounded-full w-16 h-16 shadow-2xl hover:rotate-[360deg] duration-500"><img src="/rotaractLogo.png" className='shadow-2xl' alt="Logo"></img></div>                
                 </div>
             </div>
         </>
