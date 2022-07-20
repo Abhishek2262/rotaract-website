@@ -2,17 +2,20 @@ import 'aos/dist/aos.css';
 import Aos from 'aos';
 import Image from 'next/image'
 import Card from '../components/card';
+import logo from '../public/rotaractLogo.svg'
+
 
 
 import { useEffect } from 'react';
 
-export default function About()
+export default function About(props)
 {
 
      useEffect(() => {
         Aos.init()
       }, [])
 
+      console.log(props.foo)
     
       
     return(
@@ -20,6 +23,7 @@ export default function About()
             
             <div className='d1 bg-slate-100 text-black min-h-[19rem] p-4 border-1  '> 
              <h1 className='rtr1 text-center {hover:tracking-widest duration-300}' data-aos="fade-up">  Rotaract Club  </h1>
+
 
               <div className='d2 flex justify-evenly m-5 gap-8'>
 
@@ -42,21 +46,29 @@ export default function About()
 
             </div>
 
-            
-            <div className='cards bg-slate-100 flex flex-row  justify-evenly gap-12 flex flex-wrap'>
+            <div className=' bg-slate-100 overflow-scroll snap-x snap-mandatory flex gap-32 p-8 px-32 place-items-center w-full'>
 
-            <Card name="Aryan Raj" post="President"/>
-            <Card name="Souvik Dey" post={"Joint-President"}/>
-            <Card name="Abhishek Pandey" post={"VP"}/>
-            <Card name="Sakshi" post={"VP"}/>
-            <Card name="Abheet Pandey" post={"District co-ordinator"}/>
-            <Card name="Abhishek Ranjan" post={"District co-ordinator"}/>
-            <Card name="Mihir Verma" post={"Director"}/>
-            <Card name="Pandey" post={"VP"}/>
-            <Card name="Pandey" post={"VP"}/>
-            <Card name="Pandey" post={"VP"}/>
-            <Card name="Pandey" post={"VP"}/>
-            <Card name="Pandey" post={"VP"}/>
+                <div className='flex justify-center gap-32 snap-center '>
+                    <Card name="Aryan Raj" post="President" img={props.foo}/>
+                    <Card name="Souvik Dey" post={"Joint-President"}/>
+                    <Card name="Abhishek Pandey" post={"VP"}/>
+                    <Card name="Sakshi" post={"VP"}/>
+
+                </div>
+
+                <div className='flex justify-center gap-32 snap-center '>
+                    <Card name="Abheet Pandey" post={"District co-ordinator"}/>
+                    <Card name="Abhishek Ranjan" post={"District co-ordinator"}/>
+                    <Card name="Mihir Verma" post={"Director"}/>
+                    <Card name="Pandey" post={"VP"}/>
+                </div>
+
+                <div className='flex justify-center gap-32 snap-center '>
+                    <Card name="Pandey" post={"VP"}/>
+                    <Card name="Pandey" post={"VP"}/>
+                    <Card name="Pandey" post={"VP"}/>
+                    <Card name="Pandey" post={"VP"}/>
+                </div>
             
             
 
@@ -68,18 +80,19 @@ export default function About()
             </div>
 
             <div>
-                <div className='contact bg-[#d8378033] min-h-[30rem] p-10 gap-5 '><h2 >GET IN TOUCH</h2> <div className=' float-left text-left min-h-[5rem] text-sm pl-2'> fyfi doie fgefwe fgfewfgw igf wiufg f uvb vod ud  dktou cvsui csdg cvsdu f hifh ioh  h ohgsfggogfsogf  ufdg  f ooghhvhidhvvihh   </div> 
+                <div className='contact bg-slate-2  00 sm:min-h-[30rem] p-10 gap-5 '><h2 >GET IN TOUCH</h2> <div className=' float-left text-left min-h-[5rem] text-sm pl-2'> fyfi doie fgefwe fgfewfgw igf wiufg f uvb vod ud  dktou cvsui csdg cvsdu f hifh ioh  h ohgsfggogfsogf  ufdg  f ooghhvhidhvvihh   </div> 
+                
 
-                <form className='review  bg-slate-200 min-w-[30rem] float-right min-h-[28rem] space-y-5 mr-12 pr-8 pl-8 '>
+                <form className='review  bg-slate-100 min-w-[30rem] float-right min-h-[28rem] space-y-5 mr-12 pr-8 pl-8 '>
                     <h2 className='text-center'>Write a Review</h2>
                     <input className='palceholder:text-slate-800 border-2 border-slate-800 w-[100%]' placeholder='Name'/>
                     <div className='email border-2  float-center border-slate-800'><input className='w-[100%] ' placeholder='Email'></input></div> 
                     <textarea className='w-[100%] 'placeholder='Write a reviews' rows={4} />
-                    <div className='flex justify-center'><button className='w-[70%] border-2 h-[3rem] bg-orange-300'>Button</button></div>
+                    <div className='flex justify-center'><button className='w-[70%] border-2 h-[3rem] bg-gradient-to-r from-pink-500 to-pink-300  text-slate-100'>Button</button></div>
                 </form>
                 
                 </div>
-                <footer className='foorter bg-orange-300 min-h-[15rem]'></footer>
+                <footer className='foorter bg-gradient-to-r from-pink-500 to-pink-300  min-h-[15rem]'></footer>
                 
             
             </div>
@@ -94,3 +107,13 @@ export default function About()
         </>
     )
 }
+
+
+export async function getStaticProps(context) {
+    return {
+      props:
+      {
+        foo : logo
+      }, // will be passed to the page component as props
+    }
+  }
