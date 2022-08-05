@@ -33,7 +33,7 @@ export default function Home() {
 
           <h2>Who are we</h2>          
           <div className='flex justify-center'>
-            <ul className='w-[70%]' data-aos="fade-up">
+            <ul className=' sm:w-[100%] w-[70%]' data-aos="fade-up">
               
               <li>◉ VSCode - God or Bot?</li>
               <li>◉ Adobe XD - use this for creating UI designs</li>
