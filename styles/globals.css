@@ -7,7 +7,7 @@
     @apply -mt-10 opacity-0;
   }
   h1 {
-    @apply text-[2rem] p-3 md:text-[3.5rem] leading-tight font-black;
+    @apply text-[2rem] p-3 md:text-[3.5rem] leading-tight font-black ;
   }
   h2 {
     @apply font-bold py-5 text-4xl;
@@ -30,7 +30,7 @@ body {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
   padding: 0;
   margin: 0;
-  font-family: 'Tiro Kannada', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -70,4 +70,8 @@ a {
 ::selection {
   color: #f2f2f2;
   background: #d83780;
+}
+
+.skewedpic{
+  clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
 }
