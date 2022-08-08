@@ -3,7 +3,7 @@ import Aos from "aos";
 import Image from "next/image";
 import Card from "../components/card";
 import logo from "../public/rotaractLogo.svg";
-import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+import { BsFillArrowLeftCircleFill, BsLock } from "react-icons/bs";
 import { FaFacebook,FaInstagram,FaRegEnvelope,FaPhoneAlt,FaLocationArrow,FaLinkedinIn,FaArrowCircleLeft,FaArrowCircleRight } from "react-icons/fa";
 import { useEffect } from "react";
 
@@ -94,6 +94,41 @@ export default function About(props) {
         {" "}
         <h2 className="text-white"> Introduction </h2>
       </div>
+
+      <div style={{display: 'flex', justifyContent: 'space-around'}}>
+
+      <div className="bg-white min-h min-h-[20rem] rounded-xl shadow-md flex-col max-w-[18rem] pt-7 pl-7 pr-7">
+      <div  style={{backgroundColor: '#F27BB8', minWidth: '200px', minHeight: '200px', borderRadius: '50%'}} >
+        <div className="">
+              <h4 className="text-center text-md">Web-developers</h4>
+              <h5 className="text-center text-sm">Abhishek Pandey</h5>
+        </div>
+     
+      </div>
+      </div>
+      <div className="bg-white min-h min-h-[20rem] rounded-xl shadow-md  max-w-[18rem] pt-7 pl-7 pr-7">
+      <div  style={{backgroundColor: '#F27BB8', minWidth: '200px', minHeight: '200px', borderRadius: '50%'}} >
+        <div>
+        <h4 className="text-center text-md">Web-developers</h4>
+        <h5 className="text-center text-sm">Anirban Halder</h5>
+        </div>
+      
+      </div>
+      </div>
+       <div className="bg-white min-h min-h-[20rem] rounded-xl shadow-md  max-w-[18rem] pt-7 pl-7 pr-7">
+       <div  style={{backgroundColor: '#F27BB8', minWidth: '200px', minHeight: '200px', borderRadius: '50%'}} >
+        <div>
+            <h4 className="text-center text-md">Designer</h4>
+            <h5 className="text-center text-sm">Prerna Verma</h5>
+        </div>
+       
+       </div>
+       </div>
+
+      </div>
+   
+
+                  
 
       <div className=""data-aos="fade-up">
         <div className="contact bg-white sm:min-h-[30rem] text-pink-500 p-10 gap-5 ">
@@ -193,12 +228,12 @@ export default function About(props) {
             <FaLinkedinIn className="hover:text-slate-800 hover:cursor-pointer"/> 
             </div>
             <div className="flex justify-center  gap-20  ">
-                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer">Home</div>
-                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer">About</div>
-                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer">Event</div>
-                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer">Contact</div>
+                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer"> <a href="./" id="homebut"></a>Home </div>
+                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer"><a href="./about" id="aboutbut"></a>About</div>
+                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer"><a href="./events" id="eventsbut"></a>Event</div>
+                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer"><a href="#" id="contbut"></a>Contact</div>
             </div>
-            
+             
         </footer>
       </div>
     </>

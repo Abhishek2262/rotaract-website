@@ -32,3 +32,4 @@ export default function Card({name, post, img = "/rotaractLogo.png"})
         </>
     )
 }
+
