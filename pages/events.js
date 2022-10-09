@@ -1,3 +1,6 @@
+import EventsCard from "../components/eventcard";
+import EventsCardRight from "../components/eventcardright";
+import { FaFacebook,FaInstagram,FaRegEnvelope,FaPhoneAlt,FaLocationArrow,FaLinkedinIn,FaArrowCircleLeft,FaArrowCircleRight } from "react-icons/fa";
 
 
 
@@ -12,21 +15,34 @@ export default function Events(){
 
       
     </div>
-    <div className="min-h-[22rem] object-center md:max-w-[85rem] flex flex-row gap-12 rounded-xl shadow-lg bg-slate-100 p-8">
-      
-            <div className="min-h-[13rem] md:min-w-[15rem] rounded-xl text-center   bg-green-400 p-4  ">
-              Holi Mahotsav
-
-            </div>
-            <div className=" text-center leading-9 p-6 md:max-w-[55rem]">
-              AIh sdoiwhoihfh o georihionoihn gofgvnvh vksvsvs vo ffvoiehvo heroheroivefohvsdhvsohvoshs vf ohfsdvosgv ovdfo ohvfvosdgsd  kjgbjksdb kjdkjbvbdsvs kvkksdv ksgvsd vsdkvsdv sdbv sgkjvcsjksd vslsvsdgvsdi gkvsdjvgsdgvsdvbsdvgsdvbsdgvlsd sdvsdvgds hi dfbithtbh h'brt hbiorhbi'ohpi ohg rehger  oergerghergeihwe weewegweuifwefgwe  fwgvfeh t jewi fwe  fgf wejye gwefvwe fiwegfwei gfwie fuiwe gfwe efuiewfgbvweej fvwefwe 
-
-            </div>
-
+    <div className="flex flex-col gap-10 ">
+      <EventsCard name="Holi Mahotsav"/>
+      <EventsCardRight name="Gokul Ashtami"/>
+      <EventsCard name="Fresher Night"/>
+      <EventsCardRight name="Bamboozeld"/>
+      <EventsCard name=""/>
+      <EventsCardRight name=""/>
+      <EventsCard name="Bharat Darshan"/>
     </div>
-    <div className="">
-        <card1></card1>
-    </div>
+
+    <footer className=" sm:bg-pink-500 p-10  sm:min-h-[20rem]">
+            <h5 className="text-white  xl:w-[20rem] sm:text-md  text-center hover:text-slate-800 hover:cursor-pointer"> Rotaract Club Of BIT Mesra</h5>
+            <div className="text-sm text-white  xl:w-[17rem] text-left pl-3 hover:text-slate-800 hover:cursor-pointer">Abh igwh csc yhucs klkajshbfgfsvbc ttdsvcsatfsa sasathgvcsatxsavc cshgsacvschsafsafcas uycfsacsacsafs vcsufccsacfucuyc</div>
+
+            <div className="flex flex-row gap-3 p-3 sm:w-[8rem] w-[8rem] text-white ">
+            <FaFacebook className="hover:text-slate-800 hover:cursor-pointer"/>
+            <FaInstagram className="hover:text-slate-800 hover:cursor-pointer"/>
+            <FaLinkedinIn className="hover:text-slate-800 hover:cursor-pointer"/> 
+            </div>
+            <div className="flex justify-center  gap-20  ">
+                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer"> <a href="./" id="homebut"></a>Home </div>
+                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer"><a href="./about" id="aboutbut"></a>About</div>
+                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer"><a href="./events" id="eventsbut"></a>Event</div>
+                <div className="text-sm text-white hover:text-slate-800 hover:cursor-pointer"><a href="#" id="contbut"></a>Contact</div>
+            </div>
+             
+        </footer>
+   
     
    
     </>

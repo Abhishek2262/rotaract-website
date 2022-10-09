@@ -58,7 +58,7 @@ export default function Navbar(props)
                     <div className="w-[70%] px-10 h-20 ml-20  flex place-items-center gap-x-10">
                         
                         
-                            <div className='flex basis-1/5 place-items-center hover:rotate-[10000deg] duration-700'><Image src={'/rotaractLogo.png'} height={50} width={50}></Image></div>
+                            <div className='flex basis-1/5 align-middle hover:rotate-[10000deg] duration-700 justify-center'><div className='flex place-content-center'><Image src={'/rotaractLogo.png'} height={50} width={50}></Image></div></div>
                         
                             <div className='basis-1/5'><a href="./" id="homebut" className='hover:font-bold duration-300 hover:tracking-wide'>Home</a></div>
                             <div className='basis-1/5'><a href="./events" id="eventsbut" className='hover:font-bold duration-300 hover:tracking-wide'>Events</a></div>
