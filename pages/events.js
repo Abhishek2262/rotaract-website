@@ -11,7 +11,7 @@ export default function Events(){
     <>
  
     <div className=" min-h-[53rem]  min-w-[30rem]  bg-[url('../public/_MG_0041.jpg')] bg-no-repeat bg-cover " >
-      <h2 className="text-white text-center text-5xl" >OUR EVENTS</h2>
+      <h2 className="text-white text-center text-5xl " >OUR EVENTS</h2>
 
       
     </div>

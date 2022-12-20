@@ -33,6 +33,7 @@ export default function About(props) {
               worldwide, Rotary and Rotaract members work side by side to take
               action through service. From big cities to rural villages,
               Rotaract is changing communities like yours.
+              
             </p>
          
         </div>
