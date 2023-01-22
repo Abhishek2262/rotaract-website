@@ -18,12 +18,11 @@ export default function Home() {
   return (  
     <>
        <div  className='skewedpic flex justify-evenly shadow-lg  min-h-[25rem] -mx-8 clip'>
+        
         <div>  <Image src="/holi2.jpeg" height={700} width={1300} className="shadow-2xl" quality={100} alt="Hero Text"></Image>
-        
+        </div> 
         </div>
-        
-         
-        </div>
+        <div className=' bg-red-600 min-h-[30rem] max-w-[90rem]'> HI </div>
 
         
     </>
