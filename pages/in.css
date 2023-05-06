@@ -1,5 +1,5 @@
 .hero-div {
-  background-image: url("./rectangle.png");
+  background-image: url("./holi2.jpeg");
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
   clip-path: polygon(0 0, 0 100%, 100% 90%, 100% 0%, 75% 0);
