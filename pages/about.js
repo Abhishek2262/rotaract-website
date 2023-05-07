@@ -116,7 +116,7 @@ export default function About(props) {
 
       <div className="bg-white min-h min-h-[20rem] rounded-xl shadow-md flex-col max-w-[18rem] pt-7 pl-7 pr-7">
       <div style={{ marginTop : '-10%' }} className="">
-              <h4 className="text-center text-md">Web-developers</h4>
+              <h4 className="text-center text-md">Web Developers</h4>
               <h5 className="text-center text-sm">Abhishek Pandey</h5>
         </div>
       <div  style={{ marginTop : '10%', backgroundColor: '#F27BB8', minWidth: '200px', minHeight: '200px', borderRadius: '50%'}} >
