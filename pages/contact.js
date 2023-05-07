@@ -99,7 +99,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <form
+          <form style={{borderRadius : '5%'}}
             data-aos="fade-down"
             className="review  bg-white sm:min-w-[30rem] min-w-[28rem]  min-h-[15rem] sm:object-bottom       md:float-right sm:min-h-[28rem]  space-y-7 drop-shadow-2xl  pr-8 pl-8 "
           >
