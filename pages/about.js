@@ -1,12 +1,10 @@
 import "aos/dist/aos.css";
 import Aos from "aos";
-import Card from "../components/card";
 import logo from "../public/rotaractLogo.svg";
-
 import Footer from "../components/footer/footer";
-
 import { useEffect } from "react";
-import SimpleSlider from "./SliderPath";
+import SimpleSlider from "./SliderPath"; //For carousel
+import Slider2 from "./SliderPath2"; //For carousel
 
 export default function About(props) {
   useEffect(() => {
@@ -66,32 +64,11 @@ export default function About(props) {
       <div className="min-h-[25rem] bg-pink-500 max-w-full rounded-xl ">
         <h2 className="text-center text-white">Faculty Adviser</h2>
       </div>
+      
+      
 
-      <div
-        className="bg-white  overflow-scroll  snap-x sm:flex gap-40 p-8 px-36 place-items-center w-full"
-        data-bs-ride="carousel"
-      >
-        <div className="flex justify-center gap-32 snap-center  ">
-          <Card name="Aryan Raj" post="President" img={props.foo} />
-          <Card name="Souvik Dey" post={"Joint-President"} />
-          <Card name="Abhishek Pandey" post={"Vice-President"} />
-          <Card name="Sakshi" post={"Vice-President"} />
-        </div>
-
-        <div className="flex justify-center gap-32 snap-center ">
-          <Card name="Abheet Pandey" post={"District co-ordinator"} />
-          <Card name="Abhishek Ranjan" post={"District co-ordinator"} />
-          <Card name="Mihir Verma" post={"Director"} />
-          <Card name="Pandey" post={"VP"} />
-        </div>
-
-        <div className="flex justify-center gap-32 snap-center ">
-          <Card name="Pandey" post={"VP"} />
-          <Card name="Pandey" post={"VP"} />
-          <Card name="Pandey" post={"VP"} />
-          <Card name="Pandey" post={"VP"} />
-        </div>
-      </div>
+      <Slider2 />
+      
 
       <div
         className="intro bg-slate-100 text-center bg-gradient-to-r from-pink-500 to-purple-500 min-h-[35rem] p-8"
@@ -123,9 +100,9 @@ export default function About(props) {
 
       <SimpleSlider />
 
-      <Footer/>
+      <Footer />
 
-      
+
     </>
   );
 }
