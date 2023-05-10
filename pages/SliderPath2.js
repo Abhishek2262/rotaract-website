@@ -28,7 +28,7 @@ export default class SimpleSlider extends Component {
         </div>
             </div>
             <div>
-            <div className="flex justify-center gap-32 snap-center ">
+            <div style={{ marginBottom : '1rem'}} className="flex justify-center gap-32 snap-center ">
           <Card name="Abheet Pandey" post={"District co-ordinator"} />
           <Card name="Abhishek Ranjan" post={"District co-ordinator"} />
           <Card name="Mihir Verma" post={"Director"} />
@@ -36,7 +36,7 @@ export default class SimpleSlider extends Component {
         </div>
             </div>
             <div>
-            <div className="flex justify-center gap-32 snap-center ">
+            <div  className="flex justify-center gap-32 snap-center ">
           <Card name="Pandey" post={"VP"} />
           <Card name="Pandey" post={"VP"} />
           <Card name="Pandey" post={"VP"} />
