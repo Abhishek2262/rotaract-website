@@ -15,7 +15,7 @@ export default function Events() {
 
         <div style={{display: 'flex', flex: 1}} className="flex flex-wrap gap-10"   >
             <EventsCard  name="Holi Mahotsav" toGayabId='togayab1' />{" "}
-            <div className="bg-slate-500 min-w-[59rem] rounded" id='togayab1'>hi</div>
+           <div className="bg-slate-500 min-w-[59rem] rounded" id='togayab1'>hi</div>
         </div>
 
         <div className="flex flex-nowrap">
@@ -41,7 +41,7 @@ export default function Events() {
           <div className="bg-slate-500 min-w-[59rem] " id='togayab4'>hi</div>
         </div>
 
-        <EventsCardRight name="Mr & Mrs BITOTSAV" />
+        <EventsCardRight name="Mr. & Miss BITOTSAV" />
 
       </div>
 

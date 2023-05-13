@@ -81,7 +81,7 @@ export default function Home() {
       </div>
 
       <div className="album-container">
-        <div className="gap-5 m-5 flex flex-wrap item-container" style={{justifyContent: 'center'}}>
+      <div className="gap-5 m-5 flex flex-wrap item-container" style={{justifyContent: 'center'}}>
           <Allbum />
           <Allbum />
           <Allbum />
@@ -95,6 +95,7 @@ export default function Home() {
           <Allbum /> <Allbum />
         </div>
       </div>
+
 
       <h2 className="text-center font-serif">FlagShip Event</h2>
 

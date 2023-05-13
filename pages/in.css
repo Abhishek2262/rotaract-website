@@ -38,3 +38,15 @@
   flex: 1;
   justify-content: center;
 }
+.slick-prev {
+  left: 0.3% !important;
+  filter: invert(1);
+  z-index: 1;
+}
+.slick-next {
+  right: 1.1% !important;
+  filter: invert(1);
+  z-index: 1;
+}
+
+
