@@ -40,7 +40,7 @@ render() {
         </div>
         <div className="bg-white min-h min-h-[20rem] rounded-xl shadow-md  max-w-[18rem] pt-7 pl-7 pr-7">
         <div style={{marginTop: '-10%'}}>
-              <h4 className="text-center text-md">Web -developers</h4>
+              <h4 className="text-center text-md">Web-developers</h4>
               <h5 className="text-center text-sm">Anirban Halder</h5>
             </div>
           <div
