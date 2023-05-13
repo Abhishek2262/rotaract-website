@@ -14,8 +14,11 @@ export default function Footer() {
         Rotaract Club Of BIT Mesra
       </h5>
       <div className="text-sm text-white  xl:w-[17rem] text-left pl-3 hover:text-slate-800 hover:cursor-pointer">
-        Abh igwh csc yhucs klkajshbfgfsvbc ttdsvcsatfsa sasathgvcsatxsavc
-        cshgsacvschsafsafcas uycfsacsacsafs vcsufccsacfucuyc
+      Join us right away to become a part of a global network of young leaders.
+      Thank you for visiting our website, we hope to see you soon at our events!
+      Looks like you’ve reached to the edges of earth! 
+      Just Kidding, we’re not that old. But we promise, there’s a lot more to explore when we meet!
+
       </div>
 
       <div className="flex flex-row gap-3 p-3 sm:w-[8rem] w-[8rem] text-white ">

@@ -52,9 +52,9 @@ export default function Home() {
           <div className=" bg-slate-100   min-h-[8rem]  ">
             <div className="text-center m-10 p-5 font-sans italic">
               {" "}
-              "Poor children in Baltimore face even worse odds than low-income
-              kids elsewhere, mostly because they remain in impoverished
-              neighborhoods."
+              "Together, we can make a difference!"
+              Together, we can change lives! 
+                Together, we can create a better world for all!."
             </div>{" "}
           </div>
         </div>
@@ -63,6 +63,7 @@ export default function Home() {
       <div className=" bg-blue-200 only-intro">
         <div className=" min-h-[20rem] p-3 text-center rounded-md item-container">
           <h3 className="font-sas italic">Donation</h3>
+          <text> Whether due to disease, poverty, or natural disasters, innumerable people in our globe are suffering and struggling. They are in dire need of our assistance and backing, and we have the potential to change their lives. But doing it alone is not going to succeed. We require your assistance, kindness, and compassion. No matter how little you give, it can make a big difference in someone's life. </text>
         </div>
       </div>
 
