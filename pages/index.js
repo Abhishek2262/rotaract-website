@@ -4,6 +4,8 @@ import Script from "next/script";
 import Footer from "../components/footer/footer";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import Slider3 from "./SliderPath3"; //For carousel
+
 
 import { useEffect } from "react";
 import Allbum from "../components/Album card/Allbumcard";
@@ -80,21 +82,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="album-container">
-      <div className="gap-5 m-5 flex flex-wrap item-container" style={{justifyContent: 'center'}}>
-          <Allbum />
-          <Allbum />
-          <Allbum />
-          <Allbum />
-          <Allbum />
-          <Allbum />
-          <Allbum />
-          <Allbum />
-          <Allbum />
-          <Allbum />
-          <Allbum /> <Allbum />
-        </div>
-      </div>
+    <Slider3 />
 
 
       <h2 className="text-center font-serif">FlagShip Event</h2>
