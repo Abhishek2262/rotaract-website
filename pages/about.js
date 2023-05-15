@@ -61,14 +61,43 @@ export default function About(props) {
           created by Rotary International in 1962.
         </p>
       </div>
-      <div style = {{opacity: '0.6'}} className="min-h-[25rem] bg-pink-500 max-w-full rounded-xl ">
+      <div className="min-h-[25rem] bg-pink-300 max-w-full rounded-xl ">
+
         <h2 className="text-center text-white">Faculty Adviser</h2>
+
+        <div style={{
+          display: 'flex',
+          justifyContent: 'space-around',
+          alignItems: 'center'
+        }}>
+          <div style={{
+            borderRadius: '50%',
+            backgroundColor: '#F27BB8',
+            height: '18rem',
+            width: '18rem',
+            zIndex: '1'
+          }}>
+
+            {/* FacAd ka image  */}
+          </div>
+          <textarea style={{ resize: 'none', padding: '1rem', border: 'none', outline: 'none' }}
+           className="rounded-lg bg-gradient-to-r from-pink-600 to-pink-300" rows="6" cols="70">
+
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+             It was popular in the 1960s with the release of Letraset sheets 
+          </textarea>
+
+        </div>
       </div>
-      
-      
+
+
+
 
       <Slider2 />
-      
+
 
       <div
         className="intro bg-slate-100 text-center bg-gradient-to-r from-pink-500 to-purple-500 min-h-[35rem] p-8"
