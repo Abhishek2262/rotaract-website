@@ -3,23 +3,82 @@ import "slick-carousel/slick/slick-theme.css";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "aos/dist/aos.css";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoIosArrowBack } from "react-icons/io";
+
+class Question extends React.Component {
+  render() {
+    return <h2> <IoIosArrowForward />  </h2>
+  }
+}
+class Question2 extends React.Component {
+  render() {
+    return <h2> < IoIosArrowBack />  </h2>
+  }
+}
+
+
+
+const ArrowButtonNext = ({ onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        position:'absolute',
+        zIndex: '1',
+        bottom:'40%',
+        left: '97.5%',
+          filter:
+            onClick === null
+              ? "invert(0.7)"
+              : "none"
+        }}
+    >
+      <Question />
+    </button>
+  );
+};
+
+const ArrowButtonPrev = ({ onClick }) => {
+  return (
+    <button
+      onClick={onClick}
+      style={{
+        position:'absolute',
+        zIndex: '1',
+        bottom:'40%',
+          filter:
+            onClick === null
+              ? "invert(0.7)"
+              : "none"
+        }}
+    >
+      <Question2 />
+    </button>
+  );
+};
+
+
+
+
 
 export default class SimpleSlider extends Component {
-render() {
-  const settings = {
-    dots: true,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 1,
-    swipeToSlide: true,
-    slidesToScroll: 1
-  };
-  return (
-    <div>
-      
-      <Slider {...settings}>
-        <div>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+  render() {
+    const settings = {
+      dots: true,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      swipeToSlide: true,
+      prevArrow: <ArrowButtonPrev />,
+      nextArrow: <ArrowButtonNext />
+    };
+    return (
+      <div style={{position: 'relative'}}>
+        <Slider {...settings}>
+          <div>
+          <div style={{ display: "flex", justifyContent: "space-around" }}>
         
         <div className="bg-white min-h min-h-[20rem] rounded-xl shadow-md flex-col max-w-[18rem] pt-7 pl-7 pr-7">
         <div style={{marginTop : '-10%'}} className="">
@@ -73,9 +132,9 @@ render() {
           </div>
         </div>
       </div>
-        </div>
-        <div>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+          </div>
+          <div>
+          <div style={{ display: "flex", justifyContent: "space-around" }}>
         
         <div className="bg-white min-h min-h-[20rem] rounded-xl shadow-md flex-col max-w-[18rem] pt-7 pl-7 pr-7">
         <div style={{marginTop : '-10%'}} className="">
@@ -128,9 +187,10 @@ render() {
            
           </div>
         </div>
-      </div>        </div>
-        <div>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
+      </div>
+          </div>
+          <div>
+          <div style={{ display: "flex", justifyContent: "space-around"}}>
         
         <div className="bg-white min-h min-h-[20rem] rounded-xl shadow-md flex-col max-w-[18rem] pt-7 pl-7 pr-7">
         <div style={{marginTop : '-10%'}} className="">
@@ -183,14 +243,11 @@ render() {
            
           </div>
         </div>
-      </div>        </div>
-       
-      </Slider>
-    </div>
-  );
-}
-}
-    
-      
-            
+      </div>
+          </div>
           
+        </Slider>
+      </div>
+    );
+  }
+}

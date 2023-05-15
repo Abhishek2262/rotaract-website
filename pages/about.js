@@ -61,7 +61,7 @@ export default function About(props) {
           created by Rotary International in 1962.
         </p>
       </div>
-      <div className="min-h-[25rem] bg-pink-500 max-w-full rounded-xl ">
+      <div style = {{opacity: '0.6'}} className="min-h-[25rem] bg-pink-500 max-w-full rounded-xl ">
         <h2 className="text-center text-white">Faculty Adviser</h2>
       </div>
       
