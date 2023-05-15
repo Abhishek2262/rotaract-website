@@ -25,8 +25,8 @@ const ArrowButtonNext = ({ onClick }) => {
     <button
       onClick={onClick}
       style={{
-        position:'absolute',
         zIndex: '1',
+        position:'absolute',
         bottom:'40%',
         left: '97.5%',
           filter:
@@ -44,8 +44,8 @@ const ArrowButtonPrev = ({ onClick }) => {
     <button
       onClick={onClick}
       style={{ 
+        zIndex: '1',
        position: 'absolute',
-       zIndex: '1',
        bottom:'40%',
           filter:
             onClick === null
@@ -82,47 +82,59 @@ export default class CenterMode extends Component {
             <div>
             <div className="album-container">
         <div className="gap-5 m-5 flex item-container" style={{justifyContent: 'center'}}>
-          <Allbum name= "Holi"/>
+          <Allbum name= "Holi"
+            desc= " Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+           />
         </div>
       </div>
             </div>
             <div>
             <div className="album-container">
         <div className="gap-5 m-5 flex flex-wrap item-container" style={{justifyContent: 'center'}}>
-          <Allbum name= "diwali"/>
+          <Allbum name= "diwali"
+            desc= " Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+           />
         </div>
             </div>
             </div>
             <div>
             <div className="album-container">
         <div className="gap-5 m-5 flex flex-wrap item-container" style={{justifyContent: 'center'}}>
-          <Allbum name= "christmas"/>
+          <Allbum name= "christmas"
+            desc= " Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+           />
         </div>
             </div>
             </div>
             <div>
             <div className="album-container">
         <div className="gap-5 m-5 flex flex-wrap item-container" style={{justifyContent: 'center'}}>
-          <Allbum name= "republic"/>
+          <Allbum name= "republic"
+            desc= " Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+           />
         </div>
             </div>
             </div>
             <div>
             <div className="album-container">
         <div className="gap-5 m-5 flex flex-wrap item-container" style={{justifyContent: 'center'}}>
-          <Allbum name= "independence"/>
+          <Allbum name= "independence"
+            desc= " Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+           />
         </div>
             </div>
             </div>
             <div>
             <div className="album-container">
         <div className="gap-5 m-5 flex flex-wrap item-container" style={{justifyContent: 'center'}}>
-          <Allbum name= "durga puja"/>
+          <Allbum name= "durga puja"
+            desc= " Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+           />
         </div>
             </div>
             </div>
           </Slider>
         </div>
-      );
-    }
-  }
+      );
+    }
+  }
